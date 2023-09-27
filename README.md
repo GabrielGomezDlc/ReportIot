@@ -1473,8 +1473,53 @@ Para fisioterapeutas:<br>
 <li> Terapias/Therapies: Página donde mostrarán las sesiones con videos pregrabados por el médico, aquí también podrá subir otros tratamientos.
 <li> Pacientes/Patients: Página donde se gestionará a cada uno de los pacientes con los que cuente el fisioterapeuta.
 
+#### 5.2.3. SEO Tags and Meta Tags.
+En esta sección, se presentarán las etiquetas que identificarán y diferenciarán al sitio web de los demás presentes en el internet. Gracias a ellos, se podrá encontrar a Theraphy en los diversos buscadores.<br><br>
+Para el sitio web estático:<br>
+<li> Title: Theraphy
+<li> Description: Theraphy - DigitAlholics Oficial Landing Page
+<li> Keywords: therapies, rehabilitation, physical treatment, physiotherapy, physiotherapist, physical problems.
+<li> Authors: DigitAlholics team
+	
+Para la aplicación web:<br>
+<li> Title: Theraphy
+<li> Description: Theraphy – DigitAlholics Inc. Oficial Web Site
+<li> Keywords: Therapy, physiotherapist, physical therapy, doctor, handicapped, improvement, health, sessions, treatments, videos, routines
+<li> Authors: DigitAlholics team
 
+#### 5.2.4. Searching Systems.
+En esta sección se presentarán los sistemas de búsqueda que se implementarán en la aplicación. Al hacer uso de esos sistemas, los usuarios podrán encontrar la información que requieran.<br>
+En nuestro sitio web estático, los usuarios podrán utilizar la barra de navegación para buscar la información acerca de nuestro producto, los costos establecidos para cada segmento, a que nos dedicamos y los medios por los cuales pueden contactarnos.<br><br>
+En nuestra aplicación web:<br><br>
+Segmento 1: Personas con problemas físicos<br>
+<li> Diagnósticos médicos: Esta sección le permitirá al paciente revisar los resultados de cada consulta médica que se haya realizado con un fisioterapeuta registrado en la aplicación. El paciente podrá ingresar en un buscador la fecha o el nombre del fisioterapeuta con el que se realizó el chequeo médico para encontrar el diagnostico respectivo. Este buscador contará con la función de autocompletado para que le usuario ingrese con facilidad y sin errores el nombre del fisioterapeuta. Posteriormente, se presentarán los resultados de diagnósticos que coincidan con los valores ingresados en formato de lista con la fecha de la consulta y el fisioterapeuta encargado. El usuario podrá visualizar toda la información correspondiente al diagnóstico haciendo clic sobre este.
+<li> Lista de los fisioterapeutas: Esta es una de las partes más importantes dentro de la aplicación. Debido a que desde esta lista se podrá elegir a los fisioterapeutas disponibles dentro de Theraphy. Por defecto aparecerán en orden alfabético; sin embargo, se podrán aplicar diversos filtros y ordenarlos por género, ubicación, nombre, entre otros. Luego de esto, aparecerá una nueva lista con solo los profesionales que cumplan con los requisitos solicitados.
+<li> Lista de terapias/rutinas: Esta sección mostrará a las terapias disponibles en la plataforma de Theraphy. Es decir, permitirá que los usuarios, en este caso pacientes, elijan las sesiones a las que se someterán para mejorar su problema físico. Por defecto, aparecerán las recién añadidas; sin embargo, se podrán aplicar filtros para realizar una mejor búsqueda, se contará con campos como la duración, tipo de ejercicios, zona del cuerpo a la que se está tratando, nombre, entre otros.
+	
+Segmento 2: Profesionales de la salud<br>
+<li> Calendario de citas: En esta sección el fisioterapeuta podrá visualizar, a través de un calendario, los días en los que tiene consultas médicas reservadas.  Además, si desea visualizar más información acerca de la consulta reservada, así como también los datos del paciente que reservo dicha cita, deberá seleccionar una casilla de los días del calendario. Si para un mismo el fisioterapeuta tiene más de una cita, se le mostrará en formato lista los pacientes a quienes deberá atender en orden cronológico (se tomará en cuenta la hora en que se reservó la cita). Asimismo, el fisioterapeuta podrá filtrar la totalidad de sus pacientes ingresando el nombre del paciente que busca.  Este filtro por nombre también contará con la función de autocompletado para que le fisioterapeuta ingrese con facilidad y sin errores el nombre del paciente.
+<li> Lista de pacientes: En esta sección se presentarán todos los pacientes que están llevando tratamientos con el fisioterapeuta. Por defecto aparecerán en orden alfabético; sin embargo, se podrán aplicar diversos filtros y ordenarlos por género, nombre, entre otros. Luego de esto, aparecerá una nueva lista con solo los pacientes que cumplan con los requisitos solicitados.
 
+#### 5.2.5. Navigation Systems.
+A continuación, el equipo mostrará los sistemas de navegación con los que contará Theraphy para permitir a los usuarios trasladarse de manera rápida y segura a cualquier bloque de información.<br><br>
+En el caso del Landing page, como ya se ha mencionado, se cuenta con encabezados que representan a las diversas secciones que estarán presentes en él. Estas estarán ubicadas en la parte superior de la página como un menú lateral. Para que el usuario no tenga que realizar una traslación de manera manual por toda la página para llegar a una sección deseada, se podrán emplear estos encabezados para ubicarse inmediatamente en el sector al que representan. Obviamente, el visitante tiene que haber leído el título del encabezado para asegurarse de que se ubicará en la zona adecuada. De esta forma se genera una traslación fácil e intuitiva.<br><br>
+En el caso de la aplicación web, se presenta un proceso similar para el menú principal, se utilizarán las diversas opciones que presenta para trasladarse a otra página del sitio web. Estas opciones variarán de acuerdo al segmento objetivo al que pertenezca el usuario. Del mismo modo se utilizan listados para mostrar grupos de elementos, tales como pacientes, citas médicas, tratamientos, entre otros. Dentro de estas listas se podrán aplicar filtros que permitirán a los usuarios navegar entre estas opciones.
+
+### 5.3. Landing Page UI Design.
+En esta sección, abarcaremos sobre el diseño de nuestra Landing page utilizando conceptos de diseño en general y el diseño de interfaz. Utilizamos Figma como nuestro programa para diseñar los wireframes y mockups.
+
+#### 5.3.1. Landing Page Wireframe.
+Para la elaboración del Wireframe de la Landing page tanto para móvil como para escritorio. Utilizamos los principios, elementos de diseño, diseño inclusivo y arquitectura de información que hemos planteado en puntos anteriores. <br><br>
+Vista Previa del Wireframe de la Landing Page para Desktop Web Browser<br>
+<img src="https://raw.githubusercontent.com/upc-pre-202302-IoTheraphy-SI572-SW71/ReportAssets/main/Style%20Guidelines/LandigPage.png" width="150"><br><br>
+
+Vista Previa del Wireframe de la Landing Page para Mobile Web Browser<br>
+<img src="https://raw.githubusercontent.com/upc-pre-202302-IoTheraphy-SI572-SW71/ReportAssets/main/Style%20Guidelines/LandingPage%20-%20Mobile.png" width="150"><br><br>
+
+Link para la visualización de los Wireframes en Figma:  https://www.figma.com/file/PlH02iVFwPvBvSQ66yRrRa/Styles-Guidelines?node-id=12%3A37<br><br>
+El Wireframe de la landing page se diseñó aplicando los elementos y principios de diseño. En la parte de elementos, se utilizaron para la creación de formas usando los elementos de dirección y línea, las cuales lo usamos para diferenciar los componentes e imágenes que conforman el landing page.<br><br> 
+Se puede observar la aplicación de diferentes elementos de diseño como el tamaño y forma, esto lo usamos para crear la primera pantalla que verá nuestro usuario. El color que utilizamos para su elaboración va de colores en escala de grises, ya que es un wireframe y su representación es de un boceto de nuestro producto. <br>
+Para constrastar los fondos oscuros, usamos colores más claros como el blanco y en los botones son similares, ya que los botones usan un color oscuro para constratar de todo lo que ve el usuario.<br>
 
 
 
