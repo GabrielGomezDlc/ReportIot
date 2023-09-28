@@ -198,20 +198,223 @@ Asegurar un acceso alterno a los objetos multimedia por si este fallara al carga
 Ejemplo:
 
     <img src="html5.gif" alt="HTML5" style="width:128px;height:128px">
-
-<li> Never Skip the <tittle> Element<br>
-El elemento <tittle> permite que las páginas aparezcan en la lista de resultados al momento de buscar en un navegador web. Asimismo, esta es la que da el nombre de la página si se la añade a favoritos.
+    
+**CSS** <br>
+Llamado así por las siglas del nombre en inglés Cascading Style Sheets. CSS es un lenguaje de marcado que se centra en definir y mejorar la presentación de un documento que se basa en HTML. Las pautas que a seguir al momento de usar CSS son las siguientes:<br>
+  
+<li> Shorthand Properties<br>
+Hay que utilizar abreviación de propiedades, declarar los campos de los elementos en la menor cantidad de líneas posibles. De acuerdo con Google (s.f.), esto aumenta la eficacia del código y lo hace más entendible. De la misma manera, debemos evitar el colocar las unidades luego del valor cero.<br>
 
 Ejemplo:
-<title>HTML Style Guide and Coding Conventions</title>
-•	HTML Line-Wrapping
-El hecho de que en un documento HTML no haya un límite de palabras por línea, no quiere decir que sea recomendable generar líneas muy extensas de código. Al contrario, esto dificulta la lectura del código. Para pasar a la siguiente línea es necesario utilizar al menos cuatro espacios para diferenciar de elementos hijos.
 
-Ejemplo según Google (s.f.):
-<button mat-icon-button color="primary" class="menu-button"
-    (click)= "openMenu()">
-  <mat-icon>menu</mat-icon>
-</button>
+    border-top: 0;
+    font: 100%/1.6 palatino, georgia, serif; 
+    padding: 0 1em 2em;
+
+<li> Declaration Stops<br>
+Hay que colocar un punto y coma luego de cada declaración al igual que gran parte de lenguajes de programación. Según Google (s.f.). esta característica ayuda a que haya más consistencia en el código. <br>
+
+Ejemplo:
+
+    html {
+      background: #fff;
+      color: #404;
+    }
+
+    
+<li> Property Name Stops<br>
+Debe existir un espacio entre los dos puntos que están luego del nombre de una propiedad y el valor ingresado. Siempre solo un espacio luego de los dos puntos, mas no antes.<br>
+
+Ejemplo estándar según Google (s.f.):
+    
+    html {
+      background: #fff;
+      color: #404;
+    }
+
+<li> Declaration Block Separation<br>
+El uso de un separador de un espacio es necesario luego del nombre de un elemento seleccionado y la llave que inicia un bloque. Además, esta llave tiene que estar en la misma línea.<br>
+
+Ejemplo estándar según Google (s.f.):
+    
+    html {
+      background: #fff;
+      color: #404;
+    }
+
+**JavaScript** <br>
+Es un lenguaje de programación que otorga la posibilidad de indicar exactamente las acciones que debe ejecutar el navegador, indicando el orden de las tareas y el número de veces que se realizarán. Las indicaciones para usar JavaScript en nuestro proyecto son las siguientes:
+
+<li> Spaces around operators<br>
+Se debe colocar un espacio alrededor de cada operador matemático que se introduzca en el código. Esto también aplica a las comas.
+
+Ejemplo estándar según W3Schools (s.f.):
+
+    let x = y + z;
+    const myArray = ["Volvo", "Saab", "Fiat"];
+
+<li> Simple Statement’s End<br>
+Una indicación simple debe terminar en un punto y coma, esto se cumple también en muchos otros lenguajes de programación.
+
+Ejemplo estándar según W3Schools (s.f.):
+
+    let x = y + z;
+    const myArray = ["Volvo", "Saab", "Fiat"];
+    
+<li> Beginning and End of a Function<br>
+Un bloque de función debe contar con una llave al final de la primera línea, para que el cierre de esta se encuentre sola en la última. Una función termina en llave y no en punto y coma. Lo mismo aplica para condicionales o bucles.
+
+Ejemplo estándar según W3Schhol (s.f):
+
+    function toCelsius(fahrenheit) {
+      return (5 / 9) * (fahrenheit - 32);
+    }
+
+<li>	Object Rules<br>
+Para la construcción de un objeto, al igual que en una función, se comienza con una llave al final de la primera línea, pero, esta vez, la llave de cierre debe estar acompañada de un punto y coma. Para las propiedades, se colocan dos puntos y un espacio para indicar su valor, el cual debe estar entre comillas dobles si este es un string.
+
+Ejemplo estándar según W3School (s.f.):
+
+    const person = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 50,
+      eyeColor: "blue"
+    };
+
+**Gherkin** <br>
+Es un Lenguaje Específico de Dominio (DSL por sus siglas en inglés) que tiene como objetivo la resolución de un problema en específico. Para ello, se generan casos para la validación de la característica en distintos escenarios. Gherkin cuenta con múltiples elementos, de los cuales, los más famosos y, además, más utilizados son Feature, Scenario, Example, Scenario, Given, When y Then. Las indicaciones para tomar en cuenta en el uso de Gherkin en nuestro código son las siguientes.
+
+<li> Discernible Given-When-Then Blocks<br>
+Aplicar sangría para los elementos que indiquen pasos a seguir del escenario. En el caso de And, aplicar dos veces. De acuerdo con Keiblinger (2021), Esto ayuda a detectar rápidamente las partes que forman un escenario.
+
+Ejemplo:
+
+    Scenario: Ingreso los requisitos con claridad
+        Given que en el formulario de ingreso de oferta laboral
+        When escribo claramente los requisitos
+        Then se mostrará el mensaje 
+        And mi oferta solo aparecerá a quienes cumplan con estos      
+        And se habilita la opción
+
+<li> Step with Tables<br>
+Según Keiblinger (2021), para las partes del escenario que necesiten la introducción de valores, hay que agregar una tabla o crear un propio formulario que recree esa parte del escenario. Antes de esta representación se deben colocar dos puntos. 
+
+Ejemplo:
+
+        Then se mostrará el mensaje:
+    | mensaje                                          |                        
+    | Se completaron los requisitos adecuadamente      | 
+
+<li> Scenarios Separator<br>
+Para la separación de dos escenarios, se debe insertar un salto de línea y, según Keiblinger (2021), de ser posible, hay que agregar una línea de comentario para facilitar la visualización de estos. De esta forma se halla rápidamente el inicio y fin de un escenario.
+
+Ejemplo:
+
+          #-----------------------------------------------------------------------------------
+    Scenario: Ingreso los requisitos con claridad
+        Given que en el formulario de ingreso de oferta laboral
+        When escribo claramente los requisitos
+        Then se mostrará el mensaje 
+        And mi oferta solo aparecerá a quienes cumplan con estos      
+        And se habilita la opción
+ 
+          #-----------------------------------------------------------------------------------
+    Scenario: Ingreso los requisitos con claridad
+        Given que en el formulario de ingreso de oferta laboral
+        When escribo claramente los requisitos
+        Then se mostrará el mensaje 
+        And mi oferta solo aparecerá a quienes cumplan con estos      
+        And se habilita la opción
+
+**Java**<br>
+Java es una plataforma informática de lenguaje de programación creada por Sun Microsystems en 1995. Ha evolucionado desde sus humildes comienzos hasta impulsar una gran parte del mundo digital actual, ya que es una plataforma fiable en la que se crean muchos servicios y aplicaciones. Las indicaciones para usar Java en nuestro proyecto son las siguientes:
+
+<li> Clases e interfaces en Java<br>
+Los nombres de las clases deben ser sustantivos, en mayúsculas y minúsculas, con la primera letra de cada palabra interna en mayúscula. El nombre de las interfaces también debe estar en mayúscula (la primera) al igual que los nombres de las clases. Use palabras completas y debe evitar acrónimos y abreviaturas.
+  
+Ejemplo: 
+
+    Interface  Bicycle
+    Class MountainBike implements Bicyle
+    Interface Sport
+    Class Football implements Sport
+
+<li>	Métodos en Java<br>
+Los métodos deben ser verbos, en mayúsculas y minúsculas, con la primera letra de cada palabra interna (a partir de la segunda) en mayúscula.
+
+Ejemplo:
+
+    void changeGear(int newValue);
+    void speedUp(int increment);
+    void applyBrakes(int decrement);
+
+<li> Variables en Java<br>
+Los nombres de las variables deben ser cortos pero significativos.
+No debería comenzar con un guión bajo (‘_’) o caracteres, como por ejemplo, un signo de dólar ‘$’.
+Debe ser mnemotécnico, es decir, diseñado para indicar al observador casual la intención de su uso.
+Se deben evitar los nombres de variable de un carácter, excepto para variables temporales.
+Los nombres comunes para las variables temporales son: i, j, k, m y n para enteros; c, d y e para los caracteres.
+
+Ejemplo:
+
+    // variables para la clase MountainBike
+    int speed = 0;
+    int gear = 1;
+
+<li> Excepciones:<br>
+Excepto como se indica a continuación, muy rara vez es correcto no hacer nada en respuesta a una excepción detectada.
+Cuando realmente es apropiado no realizar ninguna acción en un bloque catch, la razón por la que esto se justifica se explica en un comentario.
+    
+    try {
+    int i = Integer.parseInt(response);
+    return handleNumericResponse(i);
+    } catch (NumberFormatException ok) {
+    // it's not numeric; that's fine, just continue
+    }
+    return handleTextResponse(response);
+
+<li> Excepción:<br> 
+En las pruebas, una excepción detectada puede ignorarse sin comentarios si su nombre es o comienza con expected. El siguiente es un modismo muy común para garantizar que el código bajo prueba arroja una excepción del tipo esperado, por lo que no es necesario un comentario aquí.
+  
+  try {
+  emptyStack.pop();
+  fail();
+  } catch (NoSuchElementException expected) {
+  }
+
+<li> @Override:<br>
+Un método se marca con la @Overrideanotación siempre que sea legal. Esto incluye un método de clase que anula un método de superclase, un método de clase que implementa un método de interfaz y un método de interfaz que vuelve a especificar un método de superinterfaz.
+
+<li> Excepción: @Override se puede omitir cuando el método principal es @Deprecated.
+
+**Typescript** <br<
+JavaScript es uno de los lenguajes más populares, en parte porque ha evolucionado y mejorado a pasos agigantados en los últimos años. Las indicaciones para usar Java en nuestro proyecto son las siguientes:<br>
+Las variables en typescript deben ser declaradas en minúsculas y el tipo de dato se declara con dos puntos luego de la variable.<br><br>
+
+Definicióin e inicialización separadas
+
+    var edad: number;
+    edad = 20;
+    
+Definición e inicialización en la misma línea.
+    
+    var edadAitor: number = 18
+    
+En TypeScript también se utilizan las convenciones son las mismas usadas en JavaScript.
+
+#### 6.1.4. Software Deployment Configuration.
+Como ya se ha mencionado, la gestión de nuestro código fuente se realizará a través de GitHub. Asimismo, se utilizará Github Pages para la publicación y despliegue de la página estática y sitio web.<br>
+En el caso del Landing Page, en primer lugar, se debe ir al apartado de configuración. Luego, ir ala sección “Pages” para finalmente elegir la rama y desplegar la página.<br>
+
+En el caso del FrontEnd, se deben realizar los siguientes pasos.<br>
+<li> Realizar un Build de la versión final de tu proyecto.
+<li> Haber hecho commit de todos los cambios realizados.
+<li> Descargar última versión de GitPages en tu proyecto con el comando: npm install -g @angular/cli
+<li> Añadir lo instalado a tu protecto con: ng add angular-cli-ghpages
+<li> Por último, desplegar con el siguiente comando: ng deploy your-angular-project --base-href=/<repositoryname>/
+  
+En el caso del BackEnd, hosteamos una base de datos en RailWay y simplemente seleccionamos el repositorio a desplegar, el proceso es automático.
 
 
 
